@@ -2,14 +2,14 @@ import pandas as pd
 import streamlit as st
 import joblib
 
-model = joblib.load('/data/lasso_model.joblib')
+model = joblib.load('"C:/Users/court/OneDrive/Documents/streamlit_example_repo/data/lasso_model.joblib"')
 
 st.title('Employee Turnover Prediction')
 st.write('Use the following form to submit data for a prediction.')
 
 # Create form for user input
 form = st.form(key='my_form')
-
+cik
 age = form.number_input('Age of employee', min_value=22, max_value=75, value=25)
 numberPriorJobs = form.number_input('Number of Prior Jobs', min_value=0, max_value=10, value=0)
 proportion401K = form.number_input('Proportion of 401K', min_value=0.0, max_value=1.0, value=0.0)
